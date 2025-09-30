@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--
+    Nama:   Belicia Sinuhaji
+    NIM:    2482020
+-->
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=devicewidth, initial-scale=1"/>
+    <title>Websiteku</title>
+    <style>
+        :root{
+           --maxw: 1100px;
+           --gap: 16px; 
+        }
+        *{box-sizing: border-box}
+
+        body {
+            margin: 0;
+            font-family: system-ui, Arial, sans-serif;
+            line-height: 1.6;
+            color:rgb(38, 91, 137)
+        }
+
+        .page {
+            display:grid;
+            grid-template-areas: "header header" "main aside" "footer footer";
+            grid-template-columns: 4fr 1fr;
+            gap: var(--gap);
+            max-width: var(--maxw);
+            margin: 0 auto;
+            padding: 16px;
+        }
+        
+        header {
+            grid-area: header;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #cb6805f6;
+            padding-bottom: 10px;
+        }
+
+        .logo {
+            width: 72px;
+            height: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav {
+            margin-left: auto;
+        }
+
+        .nav {
+            display: flex;
+            gap: 12px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        main {
+            grid-area: main;
+        }
+
+        aside{
+            grid-area: aside;
+        }
+
+        .card {
+            border: 1px solid #cb6805f6;
+            border-radius: 12px;
+            padding: 12px;
+            margin-bottom: var(--gap);
+            background: #fafafa
+        }
+
+        footer {
+            grid-area: footer;
+            border-top: 1px solid #cb6805f6;
+            padding-top: 10px;
+            color: #cb6805f6;
+            font-size: .9rem;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="page">
+    <header>
+        <div class="logo" aria-label="logo">LOGO</div>
+        <nav aria-label="Main Navigation">
+            <ul class="nav">
+                <li>Home</li>
+                <li>About</li>
+                <li>My Holiday</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main id="Home">
+        <h1>Websiteku</h1>
+        <p>
+            Selamat datang di website aku!
+        </p>
+    </main>
+    <aside aria-label="Side Menu">
+        <div class="card">
+            <h3>Menu Tambahan</h3>
+            <ul>
+                <li>Menu 1</li>
+                <li>Menu 2</li>
+                <li>Menu 3</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Pesan Sponsor</h3>
+            <p>
+                Input beberapa item misal link iklan/gambar
+            </p>
+        </div>
+    </aside>
+    <footer>
+        2025 &copy; Belicia Sinuhaji
+    </footer>
+</body>
+</html>
